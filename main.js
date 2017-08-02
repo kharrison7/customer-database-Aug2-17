@@ -3,6 +3,13 @@
 
 let outOfLoop = document.querySelector(".fill");
 
+// This makes the title appear.
+let topText = document.querySelector(".top-text");
+let title = document.createElement("div");
+let title_Text = `<h1>Internal Company Directory</h1>`;
+title.innerHTML = title_Text;
+topText.appendChild(title);
+// document.body.appendChild(title);
 
 for(let i = 0; i < customers.results.length; i++){
 let x = document.createElement("div");
@@ -29,8 +36,3 @@ else{
 x.innerHTML = c;
 outOfLoop.appendChild(x);
 }
-
-let title = document.createElement("div");
-let title_Text = `<h1>Internal Company Directory</h1>`;
-title.innerHTML = title_Text;
-document.body.appendChild(title);

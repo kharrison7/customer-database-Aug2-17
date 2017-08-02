@@ -6,12 +6,19 @@
 /*https://www.w3schools.com/cssref/sel_hover.asp*/
 
 .fill{
-margin-top: 160px;
+margin-top: 10px;
 display: flex;
 flex-wrap: wrap;
 width: 955px;
 position: relative;
 }
+
+.flexy{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
 
 h1{
   position: relative;
