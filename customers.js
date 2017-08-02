@@ -103,8 +103,10 @@ let c =
 
 `;
 // Above is the end of the template literal.
-console.log('Test');
-console.log(customers);
+// These are used to test in the console.
+// console.log('Test');
+// console.log(customers);
+x.setAttribute("class","oneClass");
 x.innerHTML = c;
 outOfLoop.appendChild(x);
 
