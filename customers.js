@@ -71,6 +71,9 @@ const customers =
 {"username":"lazyswan632","password":"johndeer","salt":"lbI06bwV","md5":"513fa3f1abbf6ea5f83271f5472b60d1","sha1":"5062381c4a596fff3a9ead006c879d1aaf8b82d1","sha256":"fbc3c31bdaeaaa0cb6bf2611479cbd3f709ed48c87d0e28bcc27ea486dacd265"},"dob":"1946-06-23 13:21:17","registered":"2010-05-31 00:53:06","phone":"(726)-804-8431","cell":"(727)-339-8784","id":
 {"name":"SSN","value":"141-67-4033"},"picture":
 {"large":"https://randomuser.me/api/portraits/women/81.jpg","medium":"https://randomuser.me/api/portraits/med/women/81.jpg","thumbnail":"https://randomuser.me/api/portraits/thumb/women/81.jpg"},"nat":"US"},
+
+
+
 {"gender":"female","name":
 {"title":"mrs","first":"addison","last":"graves"},"location":
 {"street":"5740 westheimer rd","city":"burkburnett","state":"oregon","postcode":64032},"email":"addison.graves@example.com","login":
@@ -86,7 +89,18 @@ const customers =
 // My code
 
 let x = document.querySelector(".fill");
-let c = `<h1>${customers.results[0].name.first} ${customers.results[0].name.last}</h1>`;
+let c =
+`<img src=${customers.results[0].picture.large} alt="person_image"/>
+<h3>${customers.results[0].name.first} ${customers.results[0].name.last}</h3>
+<p>${customers.results[0].email}</p>
+<p>${customers.results[0].location.street}</p>
+<p>${customers.results[0].phone}</p>
+<p>${customers.results[0].id.value}</p>
+
+`;
+// Above is the end of the template literal.
+
+
 console.log('Test');
 console.log(customers);
 x.innerHTML = c;
