@@ -103,10 +103,20 @@ let c =
 
 `;
 // Above is the end of the template literal.
+
+// This marks each fourth profile with a different class.
+let count = i+1;
+if( count === 4 || count%4 === 0){
+  x.setAttribute("class","fourClass");
+}
 // These are used to test in the console.
 // console.log('Test');
 // console.log(customers);
-x.setAttribute("class","oneClass");
+else{
+  x.setAttribute("class","oneClass");
+}
+
+// This fills x with c and attaches the div x to outOfLoop.
 x.innerHTML = c;
 outOfLoop.appendChild(x);
 

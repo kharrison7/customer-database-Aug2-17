@@ -1,0 +1,31 @@
+
+
+.fill{
+display: flex;
+flex-wrap: wrap;
+width: 955px;
+
+
+}
+
+
+/*This controls the appearance of each profile.*/
+body{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+/*This controls the appearance of each profile.*/
+.fourClass || .oneClass{
+  margin: 10pt;
+}
+
+/*This affects every fourth profile.*/
+.fourClass{
+margin: 10pt;
+}
+/*This affects the other profiles.*/
+.oneClass{
+margin: 10pt;
+}
