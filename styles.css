@@ -1,25 +1,56 @@
 
 
+/*Blur websites:*/
+/*https://css-tricks.com/fun-with-blurred-text/*/
+/*https://www.w3schools.com/cssref/css3_pr_text-shadow.asp*/
+/*https://www.w3schools.com/cssref/sel_hover.asp*/
+
 .fill{
+margin-top: 160px;
 display: flex;
 flex-wrap: wrap;
 width: 955px;
-
-
+position: relative;
 }
 
+h1{
+  position: relative;
+  z-index: 10;
+}
 
 /*This controls the appearance of each profile.*/
 body{
-  display: flex;
+  /*display: flex;*/
   justify-content: center;
   text-align: center;
 }
 
-/*This controls the appearance of each profile.*/
-.fourClass || .oneClass{
-  margin: 10pt;
+/*This makes the name text all uppercase.*/
+h3 {
+  text-transform: uppercase;
+    border-bottom: solid;
+    border-width: 2px;
+    border-color: #61B489;
+    /*margin: 0px;
+    padding: 0px;*/
 }
+
+/*This adds the blur effect.*/
+.ssn{
+   color: transparent;
+   text-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+/*This removes the blur effect via hover.*/
+.ssn:hover {
+  color: #61B489;
+  text-shadow: none;
+    /*background-color: yellow;*/
+}
+/*This controls the appearance of each profile.*/
+/*.fourClass || .oneClass{
+  margin: 10pt;
+}*/
 
 /*This affects every fourth profile.*/
 .fourClass{
